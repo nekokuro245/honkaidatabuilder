@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKIIII Database</title>
+    <link rel="icon" href="./assets/img/seleeicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/fonts/css/all.css"/>
+    <script src="./assets/js/style.js"></script>
+</head>
+<body>
+    <div id="main">
+        <!-- Phần header -->
+        <div id="header">
+            <ul id="nav">
+                <li class="nav-slipt"></li>
+                <li>
+                    <a href="#heading-intro">
+                        <i class="fas fa-home "></i>
+                        Trang chủ
+                    </a>
+                </li>
+                <li class="nav-slipt"></li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chess-queen"></i>
+                        Valkyries
+                    </a>
+                </li>
+                <li class="nav-slipt"></li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-atom-alt "></i>
+                        Vết thánh
+                    </a>
+                </li>
+                <li class="nav-slipt"></li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-swords "></i>
+                        Vũ khí
+                    </a>
+                </li>
+                <li class="nav-slipt"></li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-treasure-chest "></i>
+                        Nguyên liệu
+                    </a>
+                </li>
+                <li class="nav-slipt"></li>
+            </ul>
+        </div>
+
+        <!-- Phần intro website -->
+        <div id="intro">
+            <!-- Tạo arrow slider -->
+            <div class="arrow-slider-left">
+                <i class="fal fa-arrow-alt-from-right text-white"></i>
+                <a href=""></a>
+            </div>
+
+            <div class="arrow-slider-right">
+                <i class="fal fa-arrow-alt-from-left text-white"></i>
+                <a href=""></a>
+            </div>
+
+            <!-- Tạo phần intro -->
+            <div class="heading-intro" id="heading-intro" style="display: none">
+                <div class="search-intro">
+                    <i class="fal fa-search text-white"></i>
+                    <input type="text" class="input-search" placeholder=".....Bạn cần tìm gì nè...?">
+                    <div class="search-intro-slipt"></div>
+                    <div class="btn-search">
+                        <a href="#">Tìm kiếm</a>
+                    </div>
+                </div>
+            
+            <!-- Phần ngăn cách với content -->
+            <div class="slipt-intro"></div>
+            </div>
+           
+        </div>
+
+        <!-- Phần nội dung website -->
+        <div id="content">
+        <!-- Content đầu tiên -->
+            <div class="content-section">
+
+                <!-- Heading tab content -->
+                <div class="tab-new-content">
+                    <button class="tablink active" onclick="openHonkai(event,'valkyrie')">
+                        <i class="fas fa-chess-queen"></i>
+                        Valkyrie mới<a></a>
+                    </button>
+
+                    <button class="tablink" onclick="openHonkai(event,'stigma')">
+                        <i class="fas fa-atom-alt "></i>
+                        Vết thánh mới<a></a>
+                    </button>
+
+                    <button class="tablink" onclick="openHonkai(event,'weapon')">
+                        <i class="fas fa-swords "></i>
+                        Vũ khí mới<a></a>
+                    </button>
+
+                    <button class="tablink" onclick="openHonkai(event,'top-builder')">
+                        <i class="fas fa-dragon"></i>
+                        Top builder<a></a>
+                    </button>
+                </div>
+            
+                <!-- Begin: body tab content valkyrie -->
+                <div id="valkyrie" class="tabcontent">
+                    <div class="content-wrap">
+
+                        <div class="the-first-content">
+                            <div class="img-vkr">
+                                <a href="#"></a>
+                            </div>
+                            <div class="body-new-valkyrie">
+                                <h3 class="heading-new-valkyrie">Kiana Kaslana <br> (Herrscher of Flamescion)</h3>
+                                <p class="time-new-valkyrie">Ngày ra mắt: 01/08/2021</p>
+                                <p class="rare-valkyrie">
+                                    Power:
+                                    <i class="fas fa-star yellow-text"></i>
+                                    <i class="fas fa-star yellow-text"></i>
+                                    <i class="fas fa-star yellow-text"></i>
+                                    <i class="fas fa-star yellow-text"></i>
+                                    <i class="fas fa-star yellow-text"></i>
+                                </p>
+                                <p class="desc-new-valkyrie">
+                                    Sát thương lửa cự li gần, có thể chiến đấu trên không.
+                                    Tận dụng hình thái Herrscher sát thương bạo phát.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="the-second-content">
+                            <div class="the-main-one">
+                                <div class="the-sub-one">
+                                    <div class="img-vkr">
+                                        <a href="#"></a>
+                                    </div>
+                                    <div class="body-new-valkyrie">
+                                        <h3 class="heading-new-valkyrie">Raiden Mei <br> (Herrscher of Thunder)</h3>
+                                        <p class="time-new-valkyrie">Ngày ra mắt: 01/08/2021</p>
+                                        <p class="rare-valkyrie">
+                                            Power:
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="the-sub-two">
+                                    <div class="img-vkr">
+                                        <a href="#"></a>
+                                    </div>
+                                    <div class="body-new-valkyrie">
+                                        <h3 class="heading-new-valkyrie">Fu Hua <br> (Herrscher of Sentience)</h3>
+                                        <p class="time-new-valkyrie">Ngày ra mắt: 01/08/2021</p>
+                                        <p class="rare-valkyrie">
+                                            Power:
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="the-main-two">
+                                <div class="the-sub-three">
+                                    <div class="img-vkr">
+                                        <a href="#"></a>
+                                    </div>
+                                    <div class="body-new-valkyrie">
+                                        <h3 class="heading-new-valkyrie">Bronya Zaychik <br> (Herrscher of Reason)</h3>
+                                        <p class="time-new-valkyrie">Ngày ra mắt: 01/08/2021</p>
+                                        <p class="rare-valkyrie">
+                                            Power:
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="the-sub-four">
+                                    <div class="img-vkr">
+                                        <a href="#"></a>
+                                    </div>
+                                    <div class="body-new-valkyrie">
+                                        <h3 class="heading-new-valkyrie">Seele.Fuai <br> (Starchasm Nyx) </h3>
+                                        <p class="time-new-valkyrie">Ngày ra mắt: 01/08/2021</p>
+                                        <p class="rare-valkyrie">
+                                            Power:
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                            <i class="fas fa-star yellow-text"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: body tab content valkyrie -->
+
+                <!-- Begin: body tab content stigma -->
+                <div id="stigma" class="tabcontent" style="display: none">
+                    <div class="content-wrap">
+                        <div class="stigma-content">
+                            <h3 class="heading-new-stigma">Allan Poe</h3>
+                            <p class="heading-sub-new-stigma">Voice of Darkness</p>
+                            <p class="rare-stigma">
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                            </p>
+                            <div class="position-stigma-content">
+                                <img src="./assets/img/top.png" alt="">
+                                <img src="./assets/img/mid.png" alt="">
+                                <img src="./assets/img/bot.png" alt="">
+                            </div>
+                            <div class="img-stigma-content">
+                                <img src="./assets/img/AllanPoeT.png" alt="" class="img-stigma">
+                                <img src="./assets/img/AllanPoeM.png" alt="" class="img-stigma">
+                                <img src="./assets/img/AllanPoeB.png" alt="" class="img-stigma">
+                            </div>
+                        </div>
+
+                        <div class="stigma-content">
+                            <h3 class="heading-new-stigma">Yae Sakura</h3>
+                            <p class="heading-sub-new-stigma">Dream of Sakura</p>
+                            <p class="rare-stigma">
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                            </p>
+                            <div class="position-stigma-content">
+                                <img src="./assets/img/top.png" alt="">
+                                <img src="./assets/img/mid.png" alt="">
+                                <img src="./assets/img/bot.png" alt="">
+                            </div>
+                            <div class="img-stigma-content">
+                                <img src="./assets/img/YaeSakuraT.png" alt="" class="img-stigma">
+                                <img src="./assets/img/YaeSakuraM.png" alt="" class="img-stigma">
+                                <img src="./assets/img/YaeSakuraB.png" alt="" class="img-stigma">
+                            </div>
+                        </div>
+
+                        <div class="stigma-content">
+                            <h3 class="heading-new-stigma">Dante</h3>
+                            <p class="heading-sub-new-stigma">The psalm of the Gods</p>
+                            <p class="rare-stigma">
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                            </p>
+                            <div class="position-stigma-content">
+                                <img src="./assets/img/top.png" alt="">
+                                <img src="./assets/img/mid.png" alt="">
+                                <img src="./assets/img/bot.png" alt="">
+                            </div>
+                            <div class="img-stigma-content">
+                                <img src="./assets/img/DanteT.png" alt="" class="img-stigma">
+                                <img src="./assets/img/DanteM.png" alt="" class="img-stigma">
+                                <img src="./assets/img/DanteB.png" alt="" class="img-stigma">
+                            </div>
+                        </div>
+
+                        <div class="stigma-content">
+                            <h3 class="heading-new-stigma">Sirin</h3>
+                            <p class="heading-sub-new-stigma">Herrscher of the Void</p>
+                            <p class="rare-stigma">
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                                <i class="fas fa-star yellow-text"></i>
+                            </p>
+                            <div class="position-stigma-content">
+                                <img src="./assets/img/top.png" alt="">
+                                <img src="./assets/img/mid.png" alt="">
+                                <img src="./assets/img/bot.png" alt="">
+                            </div>
+                            <div class="img-stigma-content">
+                                <img src="./assets/img/SirinT.png" alt="" class="img-stigma">
+                                <img src="./assets/img/SirinM.png" alt="" class="img-stigma">
+                                <img src="./assets/img/SirinB.png" alt="" class="img-stigma">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <!-- End: body tab content stigma -->
+
+
+                <div id="weapon" class="tabcontent" style="display: none">
+                    <div class="content-wrap">
+
+                    </div>
+                </div>
+
+                <div id="top-builder" class="tabcontent" style="display: none">
+                    <div class="content-wrap">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+
+        </div>
+        <script>
+            document.getElementById("intro").addEventListener("mouseover", mouseOver);
+            document.getElementById("intro").addEventListener("mouseout", mouseOut);
+
+            function mouseOver() {
+            document.getElementById("heading-intro").style.display = "flex";}
+
+            function mouseOut() {
+            document.getElementById("heading-intro").style.display = "none";}
+        </script>
+    </div>
+</body>
+</html>
