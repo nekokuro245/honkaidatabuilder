@@ -26,6 +26,7 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    font-size: 15px;
 }
 
 .text-white{
@@ -467,6 +468,8 @@ h3{
 #stigma .rare-stigma{
     margin-top: 10px;
     margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
 }
 
 #stigma .img-stigma-content,
@@ -482,9 +485,97 @@ h3{
 }
 
 #weapon .content-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
     height: 808px;
+    padding-top: 114px;
+    padding-bottom: 10px;
+    background-image: url(../img/background-new-stig.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+#weapon .weapon-content{
+    display: flex;
+    flex-direction: row;
+    width: 555px;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.weapon-content .the-first-main-weapon-content{
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.weapon-content .the-second-main-weapon-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+}
+
+.weapon-content .the-first-sub-weapon-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: #C6D0D5;
+    border: 1px solid #ccc;
+}
+
+.weapon-content .name-weapon{
+    padding: 20px 0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.weapon-content .atk-weapon{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.weapon-content .atk-weapon .heading-atk-weapon{
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+
+.weapon-content .crit-weapon{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.weapon-content .crit-weapon .heading-crit-weapon{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.weapon-content .rarity-weapon{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.weapon-content .rarity-weapon .heading-rarity-weapon{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.weapon-content .the-second-sub-weapon-content{
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
 
 #top-builder .content-wrap{
     width: 100%;
@@ -492,6 +583,7 @@ h3{
 }
 
 
+/* Transition property */
 /* Fade in tabs */
 @-webkit-keyframes fadeEffect{
     from {opacity: 0;}
@@ -501,6 +593,22 @@ h3{
 @keyframes fadeEffect{
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+/* Responsive devices */
+/* PC: >= 1024px */
+@media (min-width: 1024px){
+
+}
+
+/* Tablets: >= 740px & < 1024px */
+@media (min-width: 740px) and (max-width: 1023px){
+
+}
+
+/* Mobile: < 740px */
+@media (max-width: 739px){
+
 }
 
 #footer{
