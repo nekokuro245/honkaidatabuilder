@@ -8,7 +8,7 @@
     <link rel="icon" href="./assets/img/seleeicon.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <link rel="stylesheet" href="./assets/fonts/css/all.css"/>
-    <script src="./assets/js/style.js"></script>
+    <link rel="stylesheet" href="./assets/fonts/themify/themify-icons.css"/>
 </head>
 <body>
     <div id="main">
@@ -68,10 +68,10 @@
             </div>
 
             <!-- Tạo phần intro -->
-            <div class="heading-intro" id="heading-intro" style="display: none">
+            <div class="heading-intro" id="heading-intro">
                 <div class="search-intro">
                     <i class="fal fa-search text-white"></i>
-                    <input type="text" class="input-search" placeholder=".....Bạn cần tìm gì nè...?">
+                    <input type="text" class="input-search" placeholder="Bạn cần tìm gì nè...?">
                     <div class="search-intro-slipt"></div>
                     <div class="btn-search">
                         <a href="#">Tìm kiếm</a>
@@ -647,7 +647,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -658,20 +657,247 @@
                 </div>
             </div>
         </div>
+    <!-- Begin: Phần chức năng khác -->
+        <!-- Thanh cuộn lên trên top -->
+        <div id="top-header-btn">
+            <a href="#"><i class="fad fa-arrow-alt-from-bottom"></i></a>
+        </div>
 
+        <!-- Khung chat bên phải -->
+        <div id="chat-box-btn" class="js-chatbox">
+                <i class="far fa-comment-dots"></i>
+        </div>
+        <!-- End: Phần chức năng khác -->
+
+        <!-- Modal Overlay -->
+        <div class="modal js-modal">
+            <div class="modal-container">
+                <div class="title-heading-chatbox">
+                    <div class="close-btn js-close-chatbox">
+                        <i class="fal fa-window-close" title="Đóng"></i>
+                    </div>
+                    <div class="title-chat-box"><p>Cbox</p></div>
+                    <a href="#" title="Đăng nhập"><i class="fas fa-sign-in-alt"></i></a>
+                </div>
+
+                <div class="chatbox-wrap">
+                    <div class="chat-box-area">
+                        <div class="avatar-user">
+                            <a href=""><img src="./assets/img/DanteB.png" alt=""></a>
+                        </div>
+                        <div class="chat-content">
+                            <div class="user-contain">
+                                <p class="username">Dante</p>
+                                <p class="timezone">JP, 31 Aug 21, 14:20</p>
+                            </div>
+                            <div class="display-chat">
+                                <p>Hôm nay trời đẹp quá !!!</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="chat-box-area">
+                        <div class="avatar-user">
+                            <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
+                        </div>
+                        <div class="chat-content">
+                            <div class="user-contain">
+                                <p class="username">Allan Poe</p>
+                                <p class="timezone">VN, 31 Aug 21, 14:20</p>
+                            </div>
+                            <div class="display-chat">
+                                <p>100% không có thì lên đây báo hoặc vào diễn đàn mà báo</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="chat-box-area">
+                        <div class="avatar-user">
+                            <a href=""><img src="./assets/img/DanteB.png" alt=""></a>
+                        </div>
+                        <div class="chat-content">
+                            <div class="user-contain">
+                                <p class="username">Dante</p>
+                                <p class="timezone">JP, 31 Aug 21, 14:20</p>
+                            </div>
+                            <div class="display-chat">
+                                <p>Mình không thích thế, làm gì nhau</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="chat-box-area">
+                        <div class="avatar-user">
+                            <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
+                        </div>
+                        <div class="chat-content">
+                            <div class="user-contain">
+                                <p class="username">Allan Poe</p>
+                                <p class="timezone">VN, 31 Aug 21, 14:20</p>
+                            </div>
+                            <div class="display-chat">
+                                <p>Thích ăn BAN không ? :)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-box-area">
+                        <div class="avatar-user">
+                            <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
+                        </div>
+                        <div class="chat-content">
+                            <div class="user-contain">
+                                <p class="username">Allan Poe</p>
+                                <p class="timezone">VN, 31 Aug 21, 14:20</p>
+                            </div>
+                            <div class="display-chat">
+                                <p>
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-box-area">
+                        <div class="avatar-user">
+                            <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
+                        </div>
+                        <div class="chat-content">
+                            <div class="user-contain">
+                                <p class="username">Allan Poe</p>
+                                <p class="timezone">VN, 31 Aug 21, 14:20</p>
+                            </div>
+                            <div class="display-chat">
+                                <p>
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-box-area">
+                        <div class="avatar-user">
+                            <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
+                        </div>
+                        <div class="chat-content">
+                            <div class="user-contain">
+                                <p class="username">Allan Poe</p>
+                                <p class="timezone">VN, 31 Aug 21, 14:20</p>
+                            </div>
+                            <div class="display-chat">
+                                <p>
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                    Bla bla bla bla
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-box-area">
+                        <div class="avatar-user">
+                            <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
+                        </div>
+                        <div class="chat-content">
+                            <div class="user-contain">
+                                <p class="username">Allan Poe</p>
+                                <p class="timezone">VN, 31 Aug 21, 14:20</p>
+                            </div>
+                            <div class="display-chat">
+                                <p>Thích ăn BAN không ? :)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-box-area">
+                        <div class="avatar-user">
+                            <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
+                        </div>
+                        <div class="chat-content">
+                            <div class="user-contain">
+                                <p class="username">Allan Poe</p>
+                                <p class="timezone">VN, 31 Aug 21, 14:20</p>
+                            </div>
+                            <div class="display-chat">
+                                <p>Thích ăn BAN không ? :)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chat-box-area">
+                        <div class="avatar-user">
+                            <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
+                        </div>
+                        <div class="chat-content">
+                            <div class="user-contain">
+                                <p class="username">Allan Poe</p>
+                                <p class="timezone">VN, 31 Aug 21, 14:20</p>
+                            </div>
+                            <div class="display-chat">
+                                <p>Thích ăn BAN không ? :)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="type-chat">
+                        <div class="main-tool-area">
+                            <div class="sub-tool-area">
+                                <a href=""><i class="fas fa-bold"></i></a>
+                                <a href=""><i class="fas fa-italic"></i></a>
+                                <a href=""><i class="fas fa-underline"></i></a>
+                                <a href=""><i class="fas fa-remove-format"></i></a>
+                                <a href=""><i class="far fa-image"></i></a>
+                            </div>
+                        </div>
+                        <div class="input-content-chat">
+                            <textarea name="" id="" cols="35" rows="5" class="input-chat"></textarea>
+                            <a href="#" class="send-chat">
+                                <i class="fas fa-paper-plane"></i>
+                            </a>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+        
         <div id="footer">
 
         </div>
-        <script>
-            document.getElementById("intro").addEventListener("mouseover", mouseOver);
-            document.getElementById("intro").addEventListener("mouseout", mouseOut);
-
-            function mouseOver() {
-            document.getElementById("heading-intro").style.display = "flex";}
-
-            function mouseOut() {
-            document.getElementById("heading-intro").style.display = "none";}
-        </script>
     </div>
 </body>
+<script src="./assets/js/style.js"></script>
 </html>

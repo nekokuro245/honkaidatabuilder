@@ -14,7 +14,7 @@
 /* Reset CSS */
 
 #main{
-    
+    overflow:hidden;
 }
 
 *{
@@ -29,6 +29,10 @@ html{
     font-size: 15px;
 }
 
+.clear{
+    clear: both; 
+}
+
 .text-white{
     color: #fff !important;
     font-size: 40px;
@@ -36,6 +40,11 @@ html{
 
 .yellow-text{
     color: rgba(255, 245, 0, 1) !important;
+}
+
+a{
+    text-decoration: none !important;
+    color: inherit;
 }
 
 h3{
@@ -52,14 +61,14 @@ h3{
 /* Tạo Css cho header */
 
 #header{
-    background-color: #1c1e21;
     width: 100%;
     height: 56px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1;
+    background-color: #1c1e21;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -103,12 +112,11 @@ h3{
 /* Phần slider */
 #intro{
     margin-top: 56px;
-    height: 680px;
+    padding-top: 50%;
     background: 
-        url('../img/slider3.png'),
-        url('../img/slider2.png'),
-        url('../img/slider1.png')       
-        top center / cover no-repeat;
+        url('../img/slider3.png') top center / cover no-repeat,
+        url('../img/slider2.png') top center / cover no-repeat,
+        url('../img/slider1.png') top center / cover no-repeat;
     background-color: rgb(158, 155, 155,0.5);
     display: flex;
     position: relative;
@@ -117,12 +125,34 @@ h3{
     top: 0;
 }
 
+#intro .arrow-slider-left{
+    position: absolute;
+    left: 0;
+    top: 40%;
+    border-radius: 0 10px 10px 0;
+    padding: 40px 20px;
+    background-color: rgba(7, 115, 235, 0.5);
+}
+
+#intro .arrow-slider-right{
+    position: absolute;
+    right: 0;
+    top: 40%;
+    border-radius: 10px 0px 0 10px;
+    padding: 40px 20px;
+    background-color: rgba(7, 115, 235, 0.5);
+}
+
 #intro .heading-intro{
     width: 100%;
     height: auto;
     padding-left: 20px;
     padding-right: 20px;
     color: #fff;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
 
     /* Cách cho content vô giữa */
     display: flex;
@@ -135,12 +165,11 @@ h3{
 }
 
 .heading-intro .search-intro{
-    margin-top: 480px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     display: flex;
-    direction: row;
+    flex-direction: row;
     background-color: rgba(43, 41, 41, 0.7);
 }
 
@@ -149,7 +178,10 @@ h3{
     margin-right: 10px;
     height: 40px;
     width: 600px;
+    padding: 10px;
     border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
     border: 1px solid #ccc;
 }
 
@@ -176,23 +208,7 @@ h3{
     color: #fff;
 }
 
-#intro .arrow-slider-left{
-    position: absolute;
-    left: 0;
-    top: 40%;
-    border-radius: 0 10px 10px 0;
-    padding: 40px 20px;
-    background-color: rgba(7, 115, 235, 0.5);
-}
 
-#intro .arrow-slider-right{
-    position: absolute;
-    right: 0;
-    top: 40%;
-    border-radius: 10px 0px 0 10px;
-    padding: 40px 20px;
-    background-color: rgba(7, 115, 235, 0.5);
-}
 
 #intro .slipt-intro{
     width: 100%;
@@ -204,7 +220,7 @@ h3{
 /* Phần Content */
 
 #content{
-    background-color: #595959;
+    background-color: #EFF1F5;
     height: auto;
     display: flex;
     align-items: center;
@@ -317,60 +333,51 @@ h3{
 
 .the-first-content .img-vkr{
     width: 100%;
-    height: 600px;
+    padding-top: 100%;
     border-radius: 5px 5px 0 0;
-    background-image: url('../img/HOF.png'), url('../img/background-vkr.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.the-first-content .img-vkr:hover{
-   
+    background: 
+        url('../img/HOF.png') top center / cover no-repeat, 
+        url('../img/background-vkr.jpg') top center / cover no-repeat;
 }
 
 .the-sub-one .img-vkr{
     width: 100%;
-    height: 200px;
+    padding-top: 100%;
     border-radius: 5px 5px 0 0;
     background-color: #595959;
-    background-image: url('../img/HOT.png'), url('../img/background-vkr.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: 
+        url('../img/HOT.png') top center / cover no-repeat, 
+        url('../img/background-vkr.jpg') center / cover no-repeat;
 }
 
 .the-sub-two .img-vkr{
     width: 100%;
-    height: 200px;
+    padding-top: 100%;
     border-radius: 5px 5px 0 0;
     background-color: #595959;
-    background-image: url('../img/HOS.png'), url('../img/background-vkr.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: 
+        url('../img/HOS.png') top center / cover no-repeat, 
+        url('../img/background-vkr.jpg') top center / cover no-repeat;
 }
 
 .the-sub-three .img-vkr{
     width: 100%;
-    height: 200px;
+    padding-top: 100%;
     border-radius: 5px 5px 0 0;
     background-color: #595959;
-    background-image: url('../img/HOR.png'), url('../img/background-vkr.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: 
+        url('../img/HOR.png') top center / cover no-repeat, 
+        url('../img/background-vkr.jpg') top center / cover no-repeat;
 }
 
 .the-sub-four .img-vkr{
     width: 100%;
-    height: 200px;
+    padding-top: 100%;
     border-radius: 5px 5px 0 0;
     background-color: #595959;
-    background-image: url('../img/selee2.png'), url('../img/background-vkr.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: 
+        url('../img/selee2.png') top center / cover no-repeat, 
+        url('../img/background-vkr.jpg') top center / cover no-repeat;
 }
 
 #valkyrie .the-third-content{
@@ -582,6 +589,200 @@ h3{
     height: 808px;
 }
 
+/* Modal overlay */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow:rgba(1, 1, 1, 0.4);
+    /* Để cho toàn bộ modal nằm giữa thì ta sử dụng thuộc tính flexbox */
+    display: none;
+}
+
+.open{
+    display: flex;
+}
+
+/* Build Chat box */
+.modal .modal-container{
+    position: fixed;
+    height: 100%;
+    width: 331px;
+    right: 0;
+    top: 56px;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.modal .title-heading-chatbox{
+    padding: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #0674EC;
+    border-bottom: 1px solid #ccc;
+    box-shadow:rgba(0, 0, 0, 0.4);
+}
+
+.modal .close-btn{
+    cursor: pointer;
+}
+
+.modal .chatbox-wrap{
+    overflow: scroll;
+    position: absolute;
+    top: 49px;
+    bottom: 184px;
+    left: 0;
+    right: 0;
+}
+
+.modal .chat-box-area{
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal .avatar-user{
+    flex: 1;
+    padding: 0 5px;
+}
+
+.modal .avatar-user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.modal .chat-content{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #EFF1F5;
+}
+
+.modal .user-contain{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal .chat-content .username{
+    color: #fff;
+    text-shadow: 0 0 6px #3193FD;
+    font-weight: bold;
+}
+
+.modal .chat-content .timezone{
+    font-size: 12px;
+}
+
+.modal .display-chat{
+    font-family: 'Times New Roman', Times, serif;
+    flex: 1;
+    padding: 10px 0;
+}
+
+.modal .type-chat{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 145px;
+    position: absolute;
+    bottom: 56px;
+    left: 0;
+    right: 0;
+    background-color: #EFF1F5;;
+}
+
+.modal .main-tool-area{
+    flex: 1;
+    padding: 5px 5px 0 5px;
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal .sub-tool-area{
+   
+}
+
+.sub-tool-area i{
+    margin: 0 10px;
+}
+
+.sub-tool-area i:hover{
+    color: #3193FD;
+}
+
+.modal .input-content-chat{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    order: 2;
+}
+
+.modal .input-chat{
+    resize: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 0px 0px 30px 5px #ccc;
+}
+
+.modal .send-chat{
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+.modal .send-chat:hover{
+    color: #fff;
+    text-shadow: 0 0 6px #3193FD;
+}
+
+/* Phần chức năng khác */
+/* Phần Top Header */
+#top-header-btn{
+    position: fixed;
+    right: 2%;
+    bottom: 20px;
+    color: #0674EC;
+    font-size: 40px;
+}
+
+/* Phần chat box */
+#chat-box-btn{
+    position: fixed;
+    cursor: pointer;
+    right: 2%;
+    bottom: 50%;
+    color: #0674EC;
+    font-size: 40px;
+}
+
+#footer{
+    width: 100%;
+    height: 200px;
+    background-color: #1c272d;
+}
+
 
 /* Transition property */
 /* Fade in tabs */
@@ -610,12 +811,3 @@ h3{
 @media (max-width: 739px){
 
 }
-
-#footer{
-    width: 100%;
-    height: 200px;
-    background-color: #1c272d;
-}
-
-
-
