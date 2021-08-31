@@ -592,10 +592,9 @@ h3{
 /* Modal overlay */
 .modal{
     position: fixed;
-    top: 0;
     right: 0;
+    top: 56px;
     bottom: 0;
-    left: 0;
     box-shadow:rgba(1, 1, 1, 0.4);
     /* Để cho toàn bộ modal nằm giữa thì ta sử dụng thuộc tính flexbox */
     display: none;
@@ -615,6 +614,8 @@ h3{
     bottom: 0;
     background-color: #fff;
     z-index: 1000;
+    animation: modalFadein ease 1s;
+    box-shadow: 0 -2px 20px rgb(0 0 0 / 30%);
 }
 
 .modal .title-heading-chatbox{
@@ -630,6 +631,7 @@ h3{
 
 .modal .close-btn{
     cursor: pointer;
+    
 }
 
 .modal .chatbox-wrap{
@@ -794,6 +796,24 @@ h3{
 @keyframes fadeEffect{
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@keyframes modalFadein{
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes modalFadeout{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }
 
 /* Responsive devices */
