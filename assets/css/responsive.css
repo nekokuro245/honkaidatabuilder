@@ -1,0 +1,18 @@
+/* Responsive devices */
+/* PC: >= 1024px */
+@media (min-width: 1024px){
+
+}
+
+/* Tablets: >= 740px & < 1024px */
+@media (min-width: 740px) and (max-width: 1023px){
+    #nav .nav-slipt{
+        display: none;
+    }
+
+}
+
+/* Mobile: < 740px */
+@media (max-width: 739px){
+
+}
