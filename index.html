@@ -813,9 +813,8 @@
         <div id="chat-box-btn" class="js-chatbox">
                 <i class="far fa-comment-dots"></i>
         </div>
-        <!-- End: Phần chức năng khác -->
 
-        <!-- Modal Overlay -->
+        <!-- Modal Overlay 1 chatbox-->
         <div class="modal js-modal">
             <div class="modal-container">
                 <div class="title-heading-chatbox">
@@ -1039,6 +1038,48 @@
 
             </div>
         </div>
+
+        <!-- Modal Overlay 2 account -->
+        <div class="modal-second">
+            <div class="modal-container-second">
+                <div class="title-account">
+                    <div class="avatar-user">
+                        <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
+                    </div>
+                    <div class="username">
+                        <p>Allan Poe</p>
+                    </div>
+                </div>
+                <div class="content-account">
+                    <div class="email-account">
+                        <p>Tin nhắn:</p>
+                        <i class="fal fa-envelope">
+                            <div class="number-email">
+                                2
+                            </div>
+                        </i>
+                    </div>
+                    <div class="notification-account">
+                        <p>Thông báo:</p>
+                        <i class="far fa-bell">
+                            <div class="number-noti">
+                                3
+                            </div>
+                        </i>
+                    </div>
+                </div>
+                <div class="info-account">
+                    <div class="info-account-content">
+                        <div class="user-info">
+                            <a href=""><p>Hồ sơ của bạn</p></a>
+                        </div>
+                        <div class="logout-account">
+                            <a href=""><p>Đăng xuất</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- End: Phần chức năng khác --> 
 
         <div id="footer">
@@ -1047,7 +1088,29 @@
     </div>
 </body>
 <script src="./assets/js/style.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    
+   // Show account box khi roll
+    $(window).scroll(function(e)
+    { 
+    var $el = $('.modal-second'); 
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    if ($(this).scrollTop() > 1600 && !isPositionFixed)
+        { 
+            $el.css({
+                'position': 'fixed', 
+                'top': '10%',
+                'transform': 'translateY(30%)'
+            }); 
+        }
+    if ($(this).scrollTop() < 1400 && isPositionFixed)
+        {
+            $el.css({
+                'position': 'static',
+                'top': '10%',
+                'transform': 'translateY(0)'
+            }); 
+        } 
+    });
 </script>
 </html>

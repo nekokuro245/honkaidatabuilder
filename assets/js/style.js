@@ -55,6 +55,13 @@ chatBoxbtn.addEventListener('click', showChatbox)
 closeChatbox.addEventListener('click', hideChatbox)
 
 
+
+
+
+
+
+
+
 // Thực hiện animation khi mử
 // chatBoxbtn.onclick = function(){
 //   var isChangedOpen = modalContainer.ClientAnimation === modalContainerAnimation;
