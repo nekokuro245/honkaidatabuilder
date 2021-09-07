@@ -14,6 +14,7 @@
 /* Reset CSS */
 
 #main{
+    background-image: linear-gradient(to bottom, rgba(247,247,246,0.8), rgba(61,188,217,0.1));
     overflow:hidden;
 }
 
@@ -48,6 +49,14 @@
     /* For border */
     --border-color-black: #000;
     --border-color-gray: #ccc;
+
+    /* Website follow winter color design */
+    
+    --background-content: #585a59;
+    --text-color-main: #f7f7f6;
+    --text-color-sud: #ebebec;
+
+
 
 }
 
@@ -256,7 +265,6 @@ h3{
 /* Phần Content */
 
 #content{
-    background-color: var(--background-color-verylightgray);
     height: auto;
     display: flex;
     align-items: center;
@@ -270,13 +278,13 @@ h3{
     margin-bottom: 20px;
     padding: 30px;
     border-radius: 5px;
-    direction: column;
+    border: 1px solid #bbe2f2;
     background-color: var(--background-color-white);
 }
 
 .content-section .tab-new-content{
     display: flex;
-    border-bottom: 1px solid var(--border-color-gray);
+    border-bottom: 1px solid #bbe2f2;
 }
 
 .tab-new-content button{
@@ -454,7 +462,7 @@ h3{
 #valkyrie .heading-new-valkyrie{
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--border-color-gray);
+    border-bottom: 1px solid #bbe2f2;
 }
 
 #valkyrie .time-new-valkyrie{
@@ -482,13 +490,14 @@ h3{
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    height: 808px;
+    height: auto;
     padding-top: 115px;
     padding-bottom: 10px;
     background-image: url(../img/background-new-stig.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 #stigma .stigma-content{
@@ -497,7 +506,7 @@ h3{
     margin-bottom: 12px;
     border-radius: 5px 5px 0 0;
     text-align: center;
-    background-color: var(--background-color-verylightgray);
+    background-image: linear-gradient(to bottom, rgba(187,226,242,0), rgba(61,188,217,1));
 }
 
 #stigma .heading-new-stigma{
@@ -532,13 +541,14 @@ h3{
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    height: 808px;
+    height: auto;
     padding-top: 114px;
     padding-bottom: 10px;
     background-image: url(../img/background-new-stig.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 #weapon .weapon-content{
@@ -569,7 +579,8 @@ h3{
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    background-color: #C6D0D5;
+    background-color: #565656;
+    color: #bbe2f2;
     border: 1px solid var(--border-color-gray);
 }
 
@@ -803,9 +814,9 @@ h3{
 #top-header-btn{
     position: fixed;
     right: 2%;
-    bottom: 20px;
-    color: var(--color-vividblue);
-    font-size: 40px;
+    bottom: 15px;
+    color: #bbe2f2;;
+    font-size: 60px;
 }
 
 /* Phần chat box */
@@ -813,13 +824,12 @@ h3{
     position: fixed;
     cursor: pointer;
     right: 2%;
-    bottom: 50%;
-    color: var(--color-vividblue);
-    font-size: 40px;
+    bottom: 13%;
+    color: #bbe2f2;
+    font-size: 45px;
 }
 
 #forum{
-    background-color: var(--background-color-verylightgray);
     height: auto;
     display: flex;
     align-items: center;
@@ -843,7 +853,7 @@ h3{
     margin-bottom: 20px;
     padding: 30px;
     border-radius: 5px;
-    direction: column;
+    border: 1px solid #bbe2f2;
     background-color: var(--background-color-white);
 }
 
@@ -856,14 +866,14 @@ h3{
     flex-direction: row;
     text-align: center;
     overflow: hidden;
-    
+    border: 1px solid #bbe2f2;
 }
 
 #forum .breadcrumb-menu a{
     width: 25%;
     position: relative;
     display: flex;
-    background-color: var(--background-color-verylightgray);
+    background-color: rgb(212,216,217);
     justify-content: center;
 }
 
@@ -874,7 +884,7 @@ h3{
 #forum .breadcrumb-menu a:last-child{
     width: 75%;
     color: var(--color-brightviolet);
-    padding-right: 30px;
+    padding-right: 20px;
     justify-content: flex-end;
 }
 
@@ -886,7 +896,7 @@ h3{
     display: inline-block;
     height: 50px;
     width: 50px;
-    background-color: var(--background-color-verylightgray);
+    background-color: rgb(212,216,217);
     transform: scale(0.707) rotate(45deg);
     border-top-right-radius: 5px;
     box-shadow: 1px -1px rgba(0,0,0,0.25);
@@ -900,7 +910,7 @@ h3{
 #forum .breadcrumb-menu a:hover:not(:last-child){
     box-shadow: 1px -1px var(--background-shadow-color-black-alpha30);
     color: var(--color-white);
-    background: var(--background-color-vividblue);
+    background: rgb(175,231,254);
 }
 
 
@@ -908,7 +918,7 @@ h3{
 #forum .breadcrumb-menu a:hover::after{
     box-shadow: 1px -1px var(--background-shadow-color-black-alpha30);
     color: var(--color-white);
-    background: var(--background-color-vividblue);
+    background: rgb(175,231,254);
 }
 
 #forum .breadcrumb-menu .breadcrumb-wrap{
@@ -931,10 +941,12 @@ h3{
     margin-top: 10px;
     padding: 10px;
     flex-direction: row;
-    background-color: #f0f8ff;
+    background-image: linear-gradient(to right, rgb(212,216,217), rgb(181,229,248));
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
+    border-left: 1px solid #bbe2f2;
+    margin-bottom: 10px;
 }
 
 #forum .content-forum{
@@ -946,15 +958,31 @@ h3{
 #forum .content-forum .main-content{
     flex: 3;
     width: 100%;
-    height: 1000px;
-    background-color: var(--background-color-gray);
+    height: auto;
+    border: 1px solid #bbe2f2;
+    background-color: rgb(233,233,233);
+}
+
+#forum .title-topic{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #bbe2f2;
+}
+
+#forum .body-topic{
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
 }
 
 #forum .content-forum .sub-content{
     flex: 1;
     width: 100%;
-    height: 1000px;
-    background-color: var(--background-color-black);
+    height: auto;
+    margin-left: 10px;
+    border: 1px solid #bbe2f2;
+    background-color: rgb(233,233,233);
 }
 
 
@@ -976,22 +1004,6 @@ h3{
     height: 200px;
     background-color: var(--background-color-green-moss);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Transition property */
 /* Fade in tabs */

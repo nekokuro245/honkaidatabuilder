@@ -14,5 +14,15 @@
 
 /* Mobile: < 740px */
 @media (max-width: 739px){
+    #intro .search-intro{
+        display: none;
+    }
 
+    .modal .modal-container{
+        width: 100%;
+    }
+
+    #forum .breadcrumb-menu{
+        display: none;
+    }
 }
