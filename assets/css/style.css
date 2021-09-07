@@ -68,6 +68,7 @@
 
 html{
     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Font Awesome 6 Duotone';
     scroll-behavior: smooth;
     font-size: 15px;
 }
@@ -280,6 +281,7 @@ h3{
     border-radius: 5px;
     border: 1px solid #bbe2f2;
     background-color: var(--background-color-white);
+    box-shadow: 0 10px 10px var(--background-shadow-color-black-alpha30);
 }
 
 .content-section .tab-new-content{
@@ -855,6 +857,7 @@ h3{
     border-radius: 5px;
     border: 1px solid #bbe2f2;
     background-color: var(--background-color-white);
+    box-shadow: 0 10px 10px var(--background-shadow-color-black-alpha30);
 }
 
 #forum .breadcrumb-menu{
@@ -1005,6 +1008,13 @@ h3{
     background-color: var(--background-color-green-moss);
 }
 
+/* Import font family */
+@font-face {
+    font-family:font_honkai;
+    src:url('../fonts/otfs/Poppins-Thin.otf') format('opentype');
+    font-weight:normal;
+    font-style:normal;
+   }
 /* Transition property */
 /* Fade in tabs */
 @-webkit-keyframes fadeEffect{
