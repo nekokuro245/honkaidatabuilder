@@ -821,7 +821,7 @@ h3{
 
 .modal-second .modal-container-second{
     width: 331px;
-    height: 300px;
+    height: 331px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -835,6 +835,7 @@ h3{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .title-account .avatar-user{
@@ -857,12 +858,14 @@ h3{
 }
 
 .modal-second .content-account{
+    position: relative;
     display: flex;
+    flex: 3;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     text-align: center;
     padding: 10px;
+    /* border-bottom: 1px solid #bbe2f2; */
 }
 
 .content-account .email-account, .notification-account{
@@ -877,6 +880,91 @@ h3{
     position: relative;
 }
 
+.content-account .number-email{
+    position: relative;
+}
+.content-account .number-email:hover .email-box{
+    transform: translateX(0);
+}
+
+.modal-second .email-box{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    left: -128px;
+    top: 31px;
+    width: 331px;
+    height: 149px;
+    padding: 10px 5px;
+    transform: translateX(-100%);
+    transition: transform ease-in-out 0.4s;
+    border-top: 1px solid #bbe2f2;
+    border-bottom: 1px solid #bbe2f2;
+    color: #000;
+    background-color: #F4F9F9;
+}
+
+.modal-second .email-box .email-row-1{
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+}
+
+.email-box .img-email-box{
+    flex: 1;
+}
+
+.email-box .img-email-box img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.email-box .main-user-other{
+    flex: 4;
+    border-bottom: 1px solid #bbe2f2;
+}
+
+.email-box .user-other{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+.email-box .user-other-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+.email-box .user-other-content p{
+    flex: 3;
+}
+
+
+.modal-second .email-box::after{
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: 179px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #F4F9F9;
+    transform: scale(0.707) rotate(-45deg);
+    /* border-top-right-radius: 5px; */
+    box-shadow: 1px -1px #bbe2f2;
+    z-index: 1;
+    
+}
+
 .email-account .number-email{
     position: absolute;
     top: 6px;
@@ -884,7 +972,7 @@ h3{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    padding: 2px;
+    padding: 0 2px;
     color: #fff;
     text-align: center;
     background-color: #28A745;
@@ -895,6 +983,44 @@ h3{
     position: relative;
 }
 
+.content-account .number-noti{
+    position: relative;
+}
+.content-account .number-noti:hover .noti-box{
+    transform: translateX(0);
+}
+
+.modal-second .noti-box{
+    position: absolute;
+    display: block;
+    left: -283px;
+    top: 31px;
+    width: 331px;
+    height: 149px;
+    padding: 5px;
+    transform: translateX(-100%);
+    transition: transform ease-in-out 0.4s;
+    border-top: 1px solid #bbe2f2;
+    border-bottom: 1px solid #bbe2f2;
+    background-color: #F4F9F9;
+}
+
+.modal-second .noti-box::after{
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: 23px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #F4F9F9;
+    transform: scale(0.707) rotate(-45deg);
+    /* border-top-right-radius: 5px; */
+    box-shadow: 1px -1px #bbe2f2;
+    z-index: 1;
+    
+}
+
 .notification-account .number-noti{
     position: absolute;
     top: 6px;
@@ -902,7 +1028,7 @@ h3{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    padding: 2px;
+    padding: 0 2px;
     color: #fff;
     text-align: center;
     background-color: #FD6A6D;
@@ -915,7 +1041,7 @@ h3{
 
 .info-account .info-account-content{
     width: 100%;
-    height: 40%;
+    height: auto;
     padding: 20px;
     position: absolute;
     bottom: 0px;
