@@ -1083,7 +1083,7 @@ h1{
 #top-header-btn{
     position: fixed;
     right: 2%;
-    bottom: 15px;
+    bottom: 55px;
     color: #bbe2f2;
     font-size: 60px;
 }
@@ -1093,7 +1093,7 @@ h1{
     position: fixed;
     cursor: pointer;
     right: 2%;
-    bottom: 13%;
+    bottom: 15%;
     color: #bbe2f2;
     font-size: 45px;
 }
@@ -1261,6 +1261,7 @@ h1{
 #footer{
     height: auto;
     display: flex;
+    padding: 15px 0;
     justify-content: center;
     background-color: var(--background-color-green-moss);
 }
@@ -1279,91 +1280,122 @@ h1{
     flex-direction: column;
 }
 
-#footer #about .title-logo{
+#footer .title-logo{
     padding: 10px;
     text-align: center;
     letter-spacing: 2px;
 }
 
 #footer #about .social-bar{
+    letter-spacing: 1px;
     display: flex;
     flex-direction: column;
     padding: 20px 0;
 }
 
-
+#footer .about-title{
+    width: 100%;
+    margin-left: 5px;
+    flex: 0;
+    flex-wrap: nowrap;
+    align-self: center;
+    text-shadow: 0 0 8px #000;
+}
+#footer .about-content{
+    margin-left: 20px;
+    flex: 3;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-self: center;
+    color:#fff;
+    font-weight: bold;
+    overflow: hidden;
+}
 
 #footer .social-bar #social-bar-1,
 #social-bar-2,
 #social-bar-3,
 #social-bar-4{
-    position: relative;
+    width: 120px;
+    padding-right: 10px;
     margin: 10px 0;
-    border-radius: 80px 25px 25px 80px;
-    transition: ease-in-out 0.4s;
-    width: 100px;
-    display: flex;
+    border-radius: 20px 10px 10px 20px;
+    display: inline-flex;
     flex-direction: row;
+    justify-content: flex-start;
+    transform: translateX(0);
+    transition: ease-in-out 0.8s;
 }
 
-.social-bar #social-bar-2 i:hover{
-    transform: rotate(0deg);
-}
 
-#social-bar-2:hover{
-    width: 300px;
-}
-
-#footer .social-bar #social-bar-1{
+#footer #social-bar-1{
     background-color: #0773eb;
 }
 
-#social-bar-1 .facebook-about{
-    flex: 3;
-    margin: 10px;
-    background-color: red;
-}
-
-#footer .social-bar #social-bar-2{
+#footer #social-bar-2{
     background-color: #55A9E0;
 }
 
-#footer .social-bar #social-bar-3{
+#footer #social-bar-3{
     background-color: #0773eb;
 }
 
-#footer .social-bar #social-bar-4{
+#footer #social-bar-4{
     background-color: #0773eb;
 }
-
 
 
 #footer #social-bar-1 #icon-rotate-js1,
 #icon-rotate-js2,
 #icon-rotate-js3,
 #icon-rotate-js4{
-    flex: 0;
+    line-height: 1;
     font-size: 40px;
+    flex: 0;
     transform: rotate(360deg);
     transition: transform ease-in-out 0.4s;
 }
 
-/* #footer #social-bar-1 i:hover {
-    transform: rotate(0deg);
-}
-
-#footer #social-bar-1:hover{
-    width: 400px;
-} */
-
 #footer #other-link{
     flex: 1;
+    border-left: 1px solid #bbe2f2;
+    border-right: 1px solid #bbe2f2;
+}
+
+#footer #other-link .fanpage-honkai{
+    padding-top: 20px;
 }
 
 #footer #function-website{
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }  
 
+#footer #function-website .user-counting h2{
+    padding: 20px 5px;
+}
+
+#footer #function-website .user-online{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#footer #function-website .user-total{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#footer-copyright{
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212,216,217);
+}
 
 /* Import font family */
 @font-face {

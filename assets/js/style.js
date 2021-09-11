@@ -36,7 +36,7 @@ function rotateIn1(){
 }
 
 function rotateOut1(){
-  changeRotate1.style.width = "100px";
+  changeRotate1.style.width = "120px";
   iconChangerotate1.style.transform = 'rotate(360deg)';
 }
 
@@ -53,43 +53,43 @@ function rotateIn2(){
 }
 
 function rotateOut2(){
-  changeRotate2.style.width = "100px";
+  changeRotate2.style.width = "120px";
   iconChangerotate2.style.transform = 'rotate(360deg)';
 }
 
 // Khi hover thì đổi box và rotate icon 3
-// const changeRotate3 = document.getElementById("social-bar-3");
-// const iconChangerotate3 = document.getElementById("icon-rotate-js3");
+const changeRotate3 = document.getElementById("social-bar-3");
+const iconChangerotate3 = document.getElementById("icon-rotate-js3");
 
-// changeRotate3.addEventListener("mouseover", rotateIn3);
-// changeRotate3.addEventListener("mouseout", rotateOut3);
+changeRotate3.addEventListener("mouseover", rotateIn3);
+changeRotate3.addEventListener("mouseout", rotateOut3);
 
-// function rotateIn3(){
-//   changeRotate3.style.width = "400px";
-//   iconChangerotate3.style.transform = 'rotate(0deg)';
-// }
+function rotateIn3(){
+  changeRotate3.style.width = "400px";
+  iconChangerotate3.style.transform = 'rotate(0deg)';
+}
 
-// function rotateOut3(){
-//   changeRotate3.style.width = "100px";
-//   iconChangerotate3.style.transform = 'rotate(360deg)';
-// }
+function rotateOut3(){
+  changeRotate3.style.width = "120px";
+  iconChangerotate3.style.transform = 'rotate(360deg)';
+}
 
 // Khi hover thì đổi box và rotate icon 4
-// const changeRotate4 = document.getElementById("social-bar-4");
-// const iconChangerotate4 = document.getElementById("icon-rotate-js4");
+const changeRotate4 = document.getElementById("social-bar-4");
+const iconChangerotate4 = document.getElementById("icon-rotate-js4");
 
-// changeRotate4.addEventListener("mouseover", rotateIn4);
-// changeRotate4.addEventListener("mouseout", rotateOut4);
+changeRotate4.addEventListener("mouseover", rotateIn4);
+changeRotate4.addEventListener("mouseout", rotateOut4);
 
-// function rotateIn4(){
-//   changeRotate4.style.width = "400px";
-//   iconChangerotate4.style.transform = 'rotate(0deg)';
-// }
+function rotateIn4(){
+  changeRotate4.style.width = "400px";
+  iconChangerotate4.style.transform = 'rotate(0deg)';
+}
 
-// function rotateOut4(){
-//   changeRotate4.style.width = "100px";
-//   iconChangerotate4.style.transform = 'rotate(360deg)';
-// }
+function rotateOut4(){
+  changeRotate4.style.width = "120px";
+  iconChangerotate4.style.transform = 'rotate(360deg)';
+}
 
 
 // Mở chatbox
