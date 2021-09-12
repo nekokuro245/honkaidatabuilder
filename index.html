@@ -15,7 +15,7 @@
     <div id="main">
         <!-- Phần header -->
         <div id="header">
-            <ul id="nav">
+            <ul id="nav" class="row-center">
                 <li class="nav-slipt"></li>
                 <li>
                     <a href="#heading-intro">
@@ -60,42 +60,39 @@
         </div>
 
         <!-- Phần intro website -->
-        <div id="intro">
+        <div id="intro" class="row">
             <!-- Tạo arrow slider -->
-            <div class="arrow-slider-left">
+            <div class="arrow-slider arrow-slider-left">
                 <i class="fal fa-arrow-alt-from-right text-white"></i>
                 <a href=""></a>
             </div>
 
-            <div class="arrow-slider-right">
+            <div class="arrow-slider arrow-slider-right">
                 <i class="fal fa-arrow-alt-from-left text-white"></i>
                 <a href=""></a>
             </div>
 
             <!-- Tạo phần intro -->
-            <div class="heading-intro" id="heading-intro">
-                <div class="search-intro">
+            <div  id="heading-intro" class="heading-intro col">
+                <div class="search-intro row-center">
                     <i class="fal fa-search text-white"></i>
                     <input type="text" class="input-search" placeholder="Bạn cần tìm gì nè...?">
                     <div class="search-intro-slipt"></div>
-                    <div class="btn-search">
+                    <div class="btn-search row-center">
                         <a href="#">Tìm kiếm</a>
                     </div>
                 </div>
-            
-            <!-- Phần ngăn cách với content -->
-            <div class="slipt-intro"></div>
+                <!-- Phần ngăn cách với content -->
+                <div class="slipt-intro"></div>
             </div>
-           
         </div>
 
         <!-- Phần nội dung website -->
-        <div id="content">
+        <div id="content" class="row-center">
         <!-- Content đầu tiên -->
-            <div class="content-section">
-
+            <div class="main-content main-section">
                 <!-- Heading tab content -->
-                <div class="tab-new-content">
+                <div class="tab-new-content row border-bot">
                     <button class="tablink active" onclick="openHonkai(event,'valkyrie')">
                         <i class="fas fa-chess-queen"></i>
                         Valkyrie mới<a></a>
@@ -119,16 +116,23 @@
             
                 <!-- Begin: body tab content valkyrie -->
                 <div id="valkyrie" class="tabcontent">
-                    <div class="content-wrap">
+                    <div class="content-wrap row">
 
-                        <div class="the-first-content">
-                            <div class="img-vkr">
+                        <div id="the-first-content" class="the-first-content">
+                            <div class="img-vkr img-responsive-box">
                                 <a href="#"></a>
+                                <div id="desc-vkr-1" class="desc-vkr-1 col-center">
+                                    <p>
+                                        ST Lửa cự li gần, có thể chiến đấu trên không.
+                                        Tận dụng hình thái Herrscher sát thương bạo phát.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="body-new-valkyrie">
-                                <h3 class="heading-new-valkyrie">Kiana Kaslana <br> (Herrscher of Flamescion)</h3>
+                            
+                            <div class="body-new-valkyrie-1 col-center">
+                                <h3>Kiana Kaslana <br> (Herrscher of Flamescion)</h3>
                                 <p class="time-new-valkyrie">Ngày ra mắt: 01/08/2021</p>
-                                <p class="rare-valkyrie">
+                                <p>
                                     Power:
                                     <i class="fas fa-star yellow-text"></i>
                                     <i class="fas fa-star yellow-text"></i>
@@ -136,21 +140,25 @@
                                     <i class="fas fa-star yellow-text"></i>
                                     <i class="fas fa-star yellow-text"></i>
                                 </p>
-                                <p class="desc-new-valkyrie">
-                                    Sát thương lửa cự li gần, có thể chiến đấu trên không.
-                                    Tận dụng hình thái Herrscher sát thương bạo phát.
-                                </p>
                             </div>
                         </div>
 
-                        <div class="the-second-content">
-                            <div class="the-main-one">
-                                <div class="the-sub-one">
-                                    <div class="img-vkr">
+                        <div class="the-second-content col">
+                            <div class="the-main-one row">
+                                <div id="the-second-content" class="the-sub-one">
+                                    <div class="img-vkr img-responsive-box">
                                         <a href="#"></a>
+                                        <div id="desc-vkr-2" class="desc-vkr-2 col-center">
+                                            <p>
+                                                ST trảm kích cự li gần, có thể liên tục tạo 
+                                                sát thương lớn ST Lôi Điện. Hỗ trợ năng lượng cho đồng
+                                                đội Dị Năng.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="body-new-valkyrie">
-                                        <h3 class="heading-new-valkyrie">Raiden Mei <br> (Herrscher of Thunder)</h3>
+                                    
+                                    <div class="body-new-valkyrie-2 col-center">
+                                        <h4 class="heading-new-valkyrie border-bot">Raiden Mei <br> (Herrscher of Thunder)</h4>
                                         <p class="time-new-valkyrie">Ngày ra mắt: 01/08/2021</p>
                                         <p class="rare-valkyrie">
                                             Power:
@@ -163,12 +171,20 @@
                                     </div>
                                 </div>
                                 
-                                <div class="the-sub-two">
-                                    <div class="img-vkr">
+                                <div id="the-third-content" class="the-sub-two">
+                                    <div class="img-vkr img-responsive-box">
                                         <a href="#"></a>
+                                        <div id="desc-vkr-3" class="desc-vkr-2 col-center">
+                                            <p>
+                                                Hỗ trợ vật lý, nhiều loại skill có thể tụ địch và tạo 
+                                                hiệu quả Yếu Đuối. Sau khi tung skill Tất Sát, trảm kích 
+                                                liên tục gây ST lớn.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="body-new-valkyrie">
-                                        <h3 class="heading-new-valkyrie">Fu Hua <br> (Herrscher of Sentience)</h3>
+                                    
+                                    <div class="body-new-valkyrie-2 col-center">
+                                        <h4 class="heading-new-valkyrie border-bot">Fu Hua <br> (Herrscher of Sentience)</h4>
                                         <p class="time-new-valkyrie">Ngày ra mắt: 01/08/2021</p>
                                         <p class="rare-valkyrie">
                                             Power:
@@ -182,13 +198,21 @@
                                 </div>
                             </div>
 
-                            <div class="the-main-two">
-                                <div class="the-sub-three">
-                                    <div class="img-vkr">
+                            <div class="the-main-two row">
+                                <div id="the-fourth-content" class="the-sub-three">
+                                    <div class="img-vkr img-responsive-box">
                                         <a href="#"></a>
+                                        <div id="desc-vkr-4" class="desc-vkr-2 col-center">
+                                            <p>
+                                                Tích luỹ năng lượng cấu tạo cự li gần. Dồn Lực
+                                                liên tục tung ST cao cự ly xa. Skill tất sát vào kiểu cưỡi,
+                                                gây lượng ST lớn.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="body-new-valkyrie">
-                                        <h3 class="heading-new-valkyrie">Bronya Zaychik <br> (Herrscher of Reason)</h3>
+                                    
+                                    <div class="body-new-valkyrie-2 col-center">
+                                        <h4 class="heading-new-valkyrie border-bot">Bronya Zaychik <br> (Herrscher of Reason)</h4>
                                         <p class="time-new-valkyrie">Ngày ra mắt: 01/08/2021</p>
                                         <p class="rare-valkyrie">
                                             Power:
@@ -201,12 +225,21 @@
                                     </div>
                                 </div>
                                 
-                                <div class="the-sub-four">
-                                    <div class="img-vkr">
+                                <div id="the-fifth-content" class="the-sub-four">
+                                    <div class="img-vkr img-responsive-box">
                                         <a href="#"></a>
+                                        <div id="desc-vkr-5" class="desc-vkr-2 col-center">
+                                        
+                                            <p>
+                                                ST Băng cự li gần, khả năng chiến đấu tập thể mạnh.
+                                                Tấn công dồn lực gây ST lớn. Skill tất sát vào hình thái
+                                                Liên Trảo, bạo phát liên tục.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="body-new-valkyrie">
-                                        <h3 class="heading-new-valkyrie">Seele.Fuai <br> (Starchasm Nyx) </h3>
+                                  
+                                    <div class="body-new-valkyrie-2 col-center">
+                                        <h4 class="heading-new-valkyrie border-bot">Seele.Fuai <br> (Starchasm Nyx) </h4>
                                         <p class="time-new-valkyrie">Ngày ra mắt: 01/08/2021</p>
                                         <p class="rare-valkyrie">
                                             Power:
@@ -226,11 +259,11 @@
 
                 <!-- Begin: body tab content stigma -->
                 <div id="stigma" class="tabcontent" style="display: none">
-                    <div class="content-wrap">
+                    <div class="content-wrap section-wrap">
                         <div class="stigma-content">
                             <h3 class="heading-new-stigma">Allan Poe</h3>
                             <p class="heading-sub-new-stigma">Voice of Darkness</p>
-                            <p class="rare-stigma">
+                            <p class="rare-stigma border-bot">
                                 <i class="fas fa-star yellow-text"></i>
                                 <i class="fas fa-star yellow-text"></i>
                                 <i class="fas fa-star yellow-text"></i>
@@ -252,7 +285,7 @@
                         <div class="stigma-content">
                             <h3 class="heading-new-stigma">Yae Sakura</h3>
                             <p class="heading-sub-new-stigma">Dream of Sakura</p>
-                            <p class="rare-stigma">
+                            <p class="rare-stigma border-bot">
                                 <i class="fas fa-star yellow-text"></i>
                                 <i class="fas fa-star yellow-text"></i>
                                 <i class="fas fa-star yellow-text"></i>
@@ -274,7 +307,7 @@
                         <div class="stigma-content">
                             <h3 class="heading-new-stigma">Dante</h3>
                             <p class="heading-sub-new-stigma">The psalm of the Gods</p>
-                            <p class="rare-stigma">
+                            <p class="rare-stigma border-bot">
                                 <i class="fas fa-star yellow-text"></i>
                                 <i class="fas fa-star yellow-text"></i>
                                 <i class="fas fa-star yellow-text"></i>
@@ -296,7 +329,7 @@
                         <div class="stigma-content">
                             <h3 class="heading-new-stigma">Sirin</h3>
                             <p class="heading-sub-new-stigma">Herrscher of the Void</p>
-                            <p class="rare-stigma">
+                            <p class="rare-stigma border-bot">
                                 <i class="fas fa-star yellow-text"></i>
                                 <i class="fas fa-star yellow-text"></i>
                                 <i class="fas fa-star yellow-text"></i>
@@ -320,9 +353,9 @@
 
 
                 <div id="weapon" class="tabcontent" style="display: none">
-                    <div class="content-wrap">
+                    <div class="content-wrap section-wrap">
 
-                        <div class="weapon-content">
+                        <div class="weapon-content row border">
                             <div class="the-first-main-weapon-content">
                                 <div class="img-weapon-content">
                                     <div class="name-weapon">
@@ -331,8 +364,8 @@
                                     <img src="./assets/img/KhoaTrungPhat.png" alt="">
                                 </div>
                             </div>
-                            <div class="the-second-main-weapon-content">
-                                <div class="the-first-sub-weapon-content">
+                            <div class="the-second-main-weapon-content col">
+                                <div class="the-first-sub-weapon-content row">
                                     <div class="atk-weapon">
                                         <div class="heading-atk-weapon">
                                             <p>ATK</p>
@@ -378,7 +411,7 @@
                             </div>
                         </div>
 
-                        <div class="weapon-content">
+                        <div class="weapon-content row border">
                             <div class="the-first-main-weapon-content">
                                 <div class="img-weapon-content">
                                     <div class="name-weapon">
@@ -388,7 +421,7 @@
                                 </div>
                             </div>
                             <div class="the-second-main-weapon-content">
-                                <div class="the-first-sub-weapon-content">
+                                <div class="the-first-sub-weapon-content row">
                                     <div class="atk-weapon">
                                         <div class="heading-atk-weapon">
                                             <p>ATK</p>
@@ -432,7 +465,7 @@
                             </div>
                         </div>
 
-                        <div class="weapon-content">
+                        <div class="weapon-content row border">
                             <div class="the-first-main-weapon-content">
                                 <div class="img-weapon-content">
                                     <div class="name-weapon">
@@ -442,7 +475,7 @@
                                 </div>
                             </div>
                             <div class="the-second-main-weapon-content">
-                                <div class="the-first-sub-weapon-content">
+                                <div class="the-first-sub-weapon-content row">
                                     <div class="atk-weapon">
                                         <div class="heading-atk-weapon">
                                             <p>ATK</p>
@@ -489,7 +522,7 @@
                             </div>
                         </div>
 
-                        <div class="weapon-content">
+                        <div class="weapon-content row border">
                             <div class="the-first-main-weapon-content">
                                 <div class="img-weapon-content">
                                     <div class="name-weapon">
@@ -499,7 +532,7 @@
                                 </div>
                             </div>
                             <div class="the-second-main-weapon-content">
-                                <div class="the-first-sub-weapon-content">
+                                <div class="the-first-sub-weapon-content row">
                                     <div class="atk-weapon">
                                         <div class="heading-atk-weapon">
                                             <p>ATK</p>
@@ -543,7 +576,7 @@
                             </div>
                         </div>
 
-                        <div class="weapon-content">
+                        <div class="weapon-content row border">
                             <div class="the-first-main-weapon-content">
                                 <div class="img-weapon-content">
                                     <div class="name-weapon">
@@ -553,7 +586,7 @@
                                 </div>
                             </div>
                             <div class="the-second-main-weapon-content">
-                                <div class="the-first-sub-weapon-content">
+                                <div class="the-first-sub-weapon-content row">
                                     <div class="atk-weapon">
                                         <div class="heading-atk-weapon">
                                             <p>ATK</p>
@@ -598,7 +631,7 @@
                             </div>
                         </div>
 
-                        <div class="weapon-content">
+                        <div class="weapon-content row border">
                             <div class="the-first-main-weapon-content">
                                 <div class="img-weapon-content">
                                     <div class="name-weapon">
@@ -607,9 +640,9 @@
                                     <img src="./assets/img/KhoaTrungPhat.png" alt="">
                                 </div>
                             </div>
-                            <div class="the-second-main-weapon-content">
-                                <div class="the-first-sub-weapon-content">
-                                    <div class="atk-weapon">
+                            <div class="the-second-main-weapon-content col">
+                                <div class="the-first-sub-weapon-content row">
+                                    <div class="atk-weapon col">
                                         <div class="heading-atk-weapon">
                                             <p>ATK</p>
                                         </div>
@@ -617,7 +650,7 @@
                                             <p>309</p>
                                         </div>
                                     </div>
-                                    <div class="crit-weapon">
+                                    <div class="crit-weapon col">
                                         <div class="heading-crit-weapon">
                                             <p>Crit</p>
                                         </div>
@@ -625,7 +658,7 @@
                                             <p>8</p>
                                         </div>
                                     </div>
-                                    <div class="rarity-weapon">
+                                    <div class="rarity-weapon col">
                                         <div class="heading-rarity-weapon">
                                             <p>Rarity</p>
                                         </div>
@@ -663,11 +696,11 @@
             </div>
         </div>
 
-        <div id="forum">
-            <div class="forum-section">
-                <div class="breadcrumb-menu">
-                        <a href="">
-                            <div class="breadcrumb-wrap">
+        <div id="forum" class="row-center">
+            <div class="main-forum main-section">
+                <div class="breadcrumb-menu row border">
+                        <a class="row" href="">
+                            <div class="breadcrumb-wrap col-center">
                                 <div class="breadcrumb-icon">
                                     <i class="fas fa-home-lg"></i>
                                 </div>
@@ -676,8 +709,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="">
-                            <div class="breadcrumb-wrap">
+                        <a class="row" href="">
+                            <div class="breadcrumb-wrap col-center">
                                 <div class="breadcrumb-icon">
                                     <i class="fad fa-users-class"></i>
                                 </div>
@@ -686,8 +719,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="">
-                            <div class="breadcrumb-wrap">
+                        <a class="row" href="">
+                            <div class="breadcrumb-wrap col-center">
                                 <div class="breadcrumb-icon">
                                     
                                 </div>
@@ -698,11 +731,11 @@
                         </a>
                 </div>
 
-                <div class="title-forum">
+                <div class="title-forum row-center border">
                     <h2>Diễn đàn thảo luận</h2>
                 </div>
                 
-                <div class="content-forum">
+                <div class="content-forum row">
                     <div class="main-content">
                         <div class="topic-gameinfo">
                             <div class="heading-topic">
@@ -815,7 +848,7 @@
         <!-- Modal Overlay 1 chatbox-->
         <div class="modal js-modal">
             <div class="modal-container">
-                <div class="title-heading-chatbox">
+                <div class="title-heading-chatbox border-bot">
                     <div class="close-btn js-close-chatbox" id="close-btn">
                         <i class="fal fa-window-close" title="Đóng"></i>
                     </div>
@@ -824,12 +857,12 @@
                 </div>
 
                 <div class="chatbox-wrap">
-                    <div class="chat-box-area">
+                    <div class="chat-box-area row">
                         <div class="avatar-user">
                             <a href=""><img src="./assets/img/DanteB.png" alt=""></a>
                         </div>
-                        <div class="chat-content">
-                            <div class="user-contain">
+                        <div class="chat-content col">
+                            <div class="user-content row">
                                 <p class="username">Dante</p>
                                 <p class="timezone">JP, 31 Aug 21, 14:20</p>
                             </div>
@@ -839,12 +872,12 @@
                         </div>
                     </div>
     
-                    <div class="chat-box-area">
+                    <div class="chat-box-area row">
                         <div class="avatar-user">
                             <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
                         </div>
-                        <div class="chat-content">
-                            <div class="user-contain">
+                        <div class="chat-content col">
+                            <div class="user-content row">
                                 <p class="username">Allan Poe</p>
                                 <p class="timezone">VN, 31 Aug 21, 14:20</p>
                             </div>
@@ -854,12 +887,12 @@
                         </div>
                     </div>
     
-                    <div class="chat-box-area">
+                    <div class="chat-box-area row">
                         <div class="avatar-user">
                             <a href=""><img src="./assets/img/DanteB.png" alt=""></a>
                         </div>
-                        <div class="chat-content">
-                            <div class="user-contain">
+                        <div class="chat-content col">
+                            <div class="user-content row">
                                 <p class="username">Dante</p>
                                 <p class="timezone">JP, 31 Aug 21, 14:20</p>
                             </div>
@@ -869,12 +902,12 @@
                         </div>
                     </div>
     
-                    <div class="chat-box-area">
+                    <div class="chat-box-area row">
                         <div class="avatar-user">
                             <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
                         </div>
-                        <div class="chat-content">
-                            <div class="user-contain">
+                        <div class="chat-content col">
+                            <div class="user-content row">
                                 <p class="username">Allan Poe</p>
                                 <p class="timezone">VN, 31 Aug 21, 14:20</p>
                             </div>
@@ -884,12 +917,12 @@
                         </div>
                     </div>
                     
-                    <div class="chat-box-area">
+                    <div class="chat-box-area row">
                         <div class="avatar-user">
                             <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
                         </div>
-                        <div class="chat-content">
-                            <div class="user-contain">
+                        <div class="chat-content col">
+                            <div class="user-content row">
                                 <p class="username">Allan Poe</p>
                                 <p class="timezone">VN, 31 Aug 21, 14:20</p>
                             </div>
@@ -924,12 +957,12 @@
                         </div>
                     </div>
 
-                    <div class="chat-box-area">
+                    <div class="chat-box-area row">
                         <div class="avatar-user">
                             <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
                         </div>
-                        <div class="chat-content">
-                            <div class="user-contain">
+                        <div class="chat-content col">
+                            <div class="user-content row">
                                 <p class="username">Allan Poe</p>
                                 <p class="timezone">VN, 31 Aug 21, 14:20</p>
                             </div>
@@ -947,12 +980,12 @@
                         </div>
                     </div>
 
-                    <div class="chat-box-area">
+                    <div class="chat-box-area row">
                         <div class="avatar-user">
                             <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
                         </div>
-                        <div class="chat-content">
-                            <div class="user-contain">
+                        <div class="chat-content col">
+                            <div class="user-content row">
                                 <p class="username">Allan Poe</p>
                                 <p class="timezone">VN, 31 Aug 21, 14:20</p>
                             </div>
@@ -970,12 +1003,12 @@
                         </div>
                     </div>
 
-                    <div class="chat-box-area">
+                    <div class="chat-box-area row">
                         <div class="avatar-user">
                             <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
                         </div>
-                        <div class="chat-content">
-                            <div class="user-contain">
+                        <div class="chat-content col">
+                            <div class="user-content row">
                                 <p class="username">Allan Poe</p>
                                 <p class="timezone">VN, 31 Aug 21, 14:20</p>
                             </div>
@@ -985,12 +1018,12 @@
                         </div>
                     </div>
 
-                    <div class="chat-box-area">
+                    <div class="chat-box-area row">
                         <div class="avatar-user">
                             <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
                         </div>
-                        <div class="chat-content">
-                            <div class="user-contain">
+                        <div class="chat-content col">
+                            <div class="user-content row">
                                 <p class="username">Allan Poe</p>
                                 <p class="timezone">VN, 31 Aug 21, 14:20</p>
                             </div>
@@ -1000,12 +1033,12 @@
                         </div>
                     </div>
 
-                    <div class="chat-box-area">
+                    <div class="chat-box-area row">
                         <div class="avatar-user">
                             <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
                         </div>
-                        <div class="chat-content">
-                            <div class="user-contain">
+                        <div class="chat-content col">
+                            <div class="user-content row">
                                 <p class="username">Allan Poe</p>
                                 <p class="timezone">VN, 31 Aug 21, 14:20</p>
                             </div>
@@ -1016,8 +1049,8 @@
                     </div>
                 </div>
                 
-                <div class="type-chat">
-                        <div class="main-tool-area">
+                <div class="type-chat col">
+                        <div class="main-tool-area row">
                             <div class="sub-tool-area">
                                 <a href=""><i class="fas fa-bold"></i></a>
                                 <a href=""><i class="fas fa-italic"></i></a>
@@ -1026,7 +1059,7 @@
                                 <a href=""><i class="far fa-image"></i></a>
                             </div>
                         </div>
-                        <div class="input-content-chat">
+                        <div class="input-content-chat row-center">
                             <textarea name="" id="" cols="35" rows="5" class="input-chat"></textarea>
                             <a href="#" class="send-chat">
                                 <i class="fas fa-paper-plane"></i>
@@ -1039,8 +1072,8 @@
 
         <!-- Modal Overlay 2 account -->
         <div class="modal-second">
-            <div class="modal-container-second">
-                <div class="title-account">
+            <div class="modal-container-second col">
+                <div class="title-account row-center">
                     <div class="avatar-user">
                         <a href=""><img src="./assets/img/AllanPoeB.png" alt=""></a>
                     </div>
@@ -1048,19 +1081,19 @@
                         <p>Allan Poe</p>
                     </div>
                 </div>
-                <div class="content-account">
-                    <div class="email-account">
+                <div class="content-account row">
+                    <div class="email-account row">
                         <p>Tin nhắn:</p>
                         <i class="fal fa-envelope">
                             <a href="" class="number-email">
                                 <p>2</p>
-                                <div class="email-box">
-                                    <div class="email-row-1">
+                                <div class="email-box col border-top border-bot">
+                                    <div class="email-row-1 row">
                                         <div class="img-email-box">
                                             <img src="./assets/img/YaeSakuraB.png" alt="" class="img-user-other">
                                         </div>
-                                        <div class="main-user-other">
-                                            <div class="user-other">
+                                        <div class="main-user-other border-bot">
+                                            <div class="user-other row">
                                                 <div class="username-other">
                                                     <p>Yae Sakura</p> 
                                                 </div>
@@ -1068,19 +1101,19 @@
                                                     <p>1 giờ trước</p>
                                                 </div>
                                             </div>
-                                            <div class="user-other-content">
+                                            <div class="user-other-content row">
                                                 <i class="fas fa-envelope-open-text"></i>
                                                 <p>Cảnh báo bạn đã vi phạm...</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="email-row-1">
+                                    <div class="email-row-1 row">
                                         <div class="img-email-box">
                                             <img src="./assets/img/MarcoPoloM.png" alt="" class="img-user-other">
                                         </div>
                                         <div class="main-user-other">
-                                            <div class="user-other">
+                                            <div class="user-other row">
                                                 <div class="username-other">
                                                     <p>Marco Polo</p> 
                                                 </div>
@@ -1088,7 +1121,7 @@
                                                     <p>1 giờ trước</p>
                                                 </div>
                                             </div>
-                                            <div class="user-other-content">
+                                            <div class="user-other-content row">
                                                 <i class="fas fa-envelope-open-text"></i>
                                                 <p>Cảnh báo bạn đã vi phạm...</p>
                                             </div>
@@ -1099,12 +1132,12 @@
                             </a>
                         </i>
                     </div>
-                    <div class="notification-account">
+                    <div class="notification-account row">
                         <p>Thông báo:</p>
                         <i class="far fa-bell">
                             <a href="" class="number-noti">
                                 3
-                                <div class="noti-box">
+                                <div class="noti-box border-top border-bot">
                     
                                 </div>
                             </a>
@@ -1112,7 +1145,7 @@
                     </div>
                 </div>
                 <div class="info-account">
-                    <div class="info-account-content">
+                    <div class="info-account-content row-center">
                         <div class="user-info">
                             <a href=""><p>Hồ sơ của bạn</p></a>
                         </div>
@@ -1126,15 +1159,15 @@
         </div>
     <!-- End: Phần chức năng khác --> 
 
-        <div id="footer">
-            <div id="footer-section">
-                <div id="about">
+        <div id="footer" class="row-center">
+            <div id="footer-section" class="row">
+                <div id="about" class="col">
                     <div class="title-logo">
                         <a href="#">
                             <h1>HKIII Builder</h1>
                         </a>
                     </div>
-                    <div class="social-bar">
+                    <div class="social-bar col">
                         <div id="social-bar-1">
                             <i id="icon-rotate-js1" class="fb-color fab fa-facebook"></i>
                             <a class="about-title" href="https://www.facebook.com/neko.geminy/">Facebook:</a>
@@ -1177,13 +1210,13 @@
                         </div>
                     </div>
                 </div>
-                <div id="function-website">
+                <div id="function-website" class="row-center">
                     <div class="user-counting">
-                        <div class="user-online">
+                        <div class="user-online row">
                             <h2>Online:</h2>
                             <h2>100</h2>
                         </div>
-                        <div class="user-total">
+                        <div class="user-total row">
                             <h2>Tổng lượt truy cập:</h2>
                             <h2>392139648</h2>
                         </div>
@@ -1191,7 +1224,7 @@
                 </div>
             </div>
         </div>
-        <div id="footer-copyright">
+        <div id="footer-copyright" class="row-center">
            <a href="#">HKIII Builder.</a>
            <p style="padding: 0 4px;">Bản quyền hình ảnh thuộc về</p>
            <a href="https://honkaiimpact3.mihoyo.com/">miHoYo</a>

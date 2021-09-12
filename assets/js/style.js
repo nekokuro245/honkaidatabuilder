@@ -22,6 +22,81 @@ document.getElementById("heading-intro").style.display = "flex";}
 function mouseOut() {
 document.getElementById("heading-intro").style.display = "none";}
 
+// Khi hover thì hiện vkr-box main
+const vkrbox1 = document.getElementById("the-first-content");
+const Descvkrmain = document.getElementById("desc-vkr-1");
+
+vkrbox1.addEventListener("mouseover", onHovervkrbox1);
+vkrbox1.addEventListener("mouseout", offHovervkrbox1);
+
+function onHovervkrbox1(){
+  Descvkrmain.style.transform = 'translateY(0)';
+}
+
+function offHovervkrbox1(){
+  Descvkrmain.style.transform = 'translateY(100%)';
+}
+
+// Khi hover thì hiện vkr-box sub 1
+const vkrbox2 = document.getElementById("the-second-content");
+const Descvkrsub1 = document.getElementById("desc-vkr-2");
+
+vkrbox2.addEventListener("mouseover", onHovervkrbox2);
+vkrbox2.addEventListener("mouseout", offHovervkrbox2);
+
+function onHovervkrbox2(){
+  Descvkrsub1.style.transform = 'translateY(0)';
+}
+
+function offHovervkrbox2(){
+  Descvkrsub1.style.transform = 'translateY(100%)';
+}
+
+// Khi hover thì hiện vkr-box sub 2
+const vkrbox3 = document.getElementById("the-third-content");
+const Descvkrsub2 = document.getElementById("desc-vkr-3");
+
+vkrbox3.addEventListener("mouseover", onHovervkrbox3);
+vkrbox3.addEventListener("mouseout", offHovervkrbox3);
+
+function onHovervkrbox3(){
+  Descvkrsub2.style.transform = 'translateY(0)';
+}
+
+function offHovervkrbox3(){
+  Descvkrsub2.style.transform = 'translateY(100%)';
+}
+
+// Khi hover thì hiện vkr-box sub 3
+const vkrbox4 = document.getElementById("the-fourth-content");
+const Descvkrsub3 = document.getElementById("desc-vkr-4");
+
+vkrbox4.addEventListener("mouseover", onHovervkrbox4);
+vkrbox4.addEventListener("mouseout", offHovervkrbox4);
+
+function onHovervkrbox4(){
+  Descvkrsub3.style.transform = 'translateY(0)';
+}
+
+function offHovervkrbox4(){
+  Descvkrsub3.style.transform = 'translateY(100%)';
+}
+
+// Khi hover thì hiện vkr-box sub 4
+const vkrbox5 = document.getElementById("the-fifth-content");
+const Descvkrsub4 = document.getElementById("desc-vkr-5");
+
+vkrbox5.addEventListener("mouseover", onHovervkrbox5);
+vkrbox5.addEventListener("mouseout", offHovervkrbox5);
+
+function onHovervkrbox5(){
+  Descvkrsub4.style.transform = 'translateY(0)';
+}
+
+function offHovervkrbox5(){
+  Descvkrsub4.style.transform = 'translateY(100%)';
+}
+
 
 // Khi hover thì đổi box và rotate icon 1
 const changeRotate1 = document.getElementById("social-bar-1");
